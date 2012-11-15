@@ -1,0 +1,70 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
+body    { font-family: Tahoma, sans-serif; font-size: 14px; color: #00377b; background: #fdfefd;}
+table   { font-family: Tahoma, sans-serif; font-size: 14px; color: #00377b;}
+button, input, select, textarea { font-family: Tahoma, sans-serif; font-size: 14px;}
+
+/* Main style */
+h1			{ font-size: 14px; font-weight: bold; margin: 0 0 17px 0;}
+h2			{ font-size: 14px; font-weight: bold; margin: 0 0 17px 0;}
+h3			{ font-size: 14px; font-weight: bold; margin: 0 0 17px 0;}
+h4			{ }
+p			{ margin: 0 0 17px 0; line-height: 18px;}
+
+.clear		{ clear: both;}
+
+a			{ color: #0091d1; text-decoration: underline;}
+a:visited	{ color: #0091d1; text-decoration: underline;}
+a:hover		{ color: #00377b; text-decoration: underline;}
+
+/* Skeleton */
+.sk		{ min-width: 1000px; text-allign: center; background: #eef7f0;}
+.sk1	{ width: 1000px; margin: auto; text-align: left; padding: 0 0 47px 0;}
+.isk		{ }
+.isk-left	{ float: left; width: 180px; padding: 0 26px 0 63px;}
+.isk-right	{ float: left; width: 691px;}
+
+.isk-right ul	{ list-style-type: disc; margin: 0 0 17px 17px;}
+.isk-right ul li 	{ margin: 0 0 7px 0;}
+
+/* Header */
+.head			{ position: relative; height: 240px; margin: 0 0 1px 0;}
+.head:before	{content:''; position: absolute; top: 0px; right: 0px; height: 11px; background: #33a7d9; width: 731px; display: block;}
+.logo			{ position: absolute; display: block; top: 59px; left: 50px;}
+.head-name		{ font-family: PT Sans, sans-serif; height: 89px; border-left: 2px solid #00377b; text-transform: uppercase; left: 269px; top: 43px; position: absolute; padding: 14px 0 0 17px;}
+.head-name b	{ display: block; font-size: 17px; font-weight: bold; line-height: 19px; letter-spacing: 1px; margin: 0 0 10px 0;}
+.head-name span	{ display: block; font-size: 12px;}
+.head-mail		{ position: absolute; top: 43px; left: 584px; border-left: 4px solid #00377b; height: 24px; width: 140px;}
+.head-mail b	{ display: block; font-size: 12px; font-weight: bold; position: absolute; display: block; left: 13px; top: 7px;}
+.head-mail span	{ display: block; font-size: 18px; position: absolute; display: block; left: 13px; top: 20px;}
+.head-phone		{ position: absolute; top: 43px; left: 728px; border-left: 4px solid #00377b; height: 24px; width: 160px;}
+.head-phone b	{ display: block; font-size: 12px; font-weight: bold; position: absolute; display: block; left: 24px; top: 7px;}
+.head-phone span{ display: block; font-size: 18px; position: absolute; display: block; left: 11px; top: 20px; width: 200px;}
+
+/* Left column */
+.isk-left h3			{ text-transform: uppercase; font-size: 16px; margin: 0px 0 29px -13px; font-weight: normal; border-left: 4px solid #00377b; height: 20px; padding: 4px 0 0 9px;}
+.lmenu					{ margin: 0px; padding: 0px; list-style-type: none; font-size: 16px;}
+.lmenu__item			{ padding: 0px; margin: 0px 0 14px 0;}
+.lmenu__item-current	{ }
+.lmenu__item-current a		{ color: #00377b; text-decoration: none;}
+.lmenu__item-current a:visited	{ color: #00377b; text-decoration: none;}
+.lmenu__item-current a:hover	{ color: #00377b; text-decoration: underline;}
+
+
+.lmenu-more	{ margin: 0; padding: 21px 0 0 0; list-style-type: none; font-size: 16px;}
+.lmenu__item-bolezn			{ padding-top: 0px;}
+.lmenu__item-bolezn a		{ color: #00377b; text-decoration: underline;}
+.lmenu__item-bolezn a:visited	{ color: #00377b; text-decoration: underline;}
+.lmenu__item-bolezn a:hover		{ color: #00377b; text-decoration: underline;}
+
+.tbole td{padding:10px 0 0 10px;}
+label { width: 14em; float: left; }
+label.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
+p { clear: both; }
+.submit { margin-left: 12em; }
+em { font-weight: bold; padding-right: 1em; vertical-align: top; }
+
+.delete_me{cursor:pointer;}
+.form_title{float:left;width:14em;}
+.hidden{display:none;}
+.date_change{padding:4px; border:1px solid #00377b; border-radius:4px; background:#33a7d9;position:relative;}
+.close_me{position:absolute;top:2px;right:4px;border:1px solid #00377b;border-radius:5px;background:#00377b;cursor:pointer;color:#FFF;}

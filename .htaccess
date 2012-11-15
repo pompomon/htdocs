@@ -1,0 +1,16 @@
+AddDefaultCharset utf-8
+php_flag short_open_tag On
+
+Options -Indexes
+
+DirectoryIndex index.php?controller=todos&action=list
+
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^([A-Za-z0-9]+)$ index.php?controller=$1&action=index&%{QUERY_STRING} [L]
+RewriteRule ^([A-Za-z0-9]+)/((?!index)[A-Za-z0-9]+)$ index.php?controller=$1&action=$2&%{QUERY_STRING} [L]
+RewriteRule ^([A-Za-z0-9]+)/((?!index)[A-Za-z0-9]+)/(\d*)$ index.php?controller=$1&action=$2&id=$3&%{QUERY_STRING} [L]
+
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$" [NC]
+RewriteRule ^(.*)$ index.php?controller=todos&action=list [L]
